@@ -1,0 +1,67 @@
+:root {
+  --bodyFont: Arial, Helvetica, sans-serif;
+  --headerFont: Verdana, Geneva, Tahoma, sans-serif;
+  --h1fontSizeDesktop: 2.028rem;
+  --h2fontSizeDesktop: 1.842rem;
+  --h3fontSizeDesktop: 1.63rem;
+}
+
+body {
+  font-family: var(--bodyFont);
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headerFont);
+}
+
+h1 {
+  font-size: var(--h1fontSizeDesktop);
+}
+
+h2 {
+  font-size: var(--h2fontSizeDesktop);
+}
+
+h3 {
+  font-size: var(--h3fontSizeDesktop);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+nav h1 {
+  display: inline;
+  float: left;
+}
+
+nav ul {
+  display: inline;
+  float: right;
+}
+
+nav li {
+  display: inline;
+}
+
+footer ul {
+  display: inline;
+  float: right;
+}
+
+footer li {
+  display: inline;
+}
