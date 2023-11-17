@@ -1,6 +1,6 @@
 :root {
-  --bodyFont: Arial, Helvetica, sans-serif;
-  --headerFont: Verdana, Geneva, Tahoma, sans-serif;
+  --bodyFont: 'DM Sans', sans-serif;
+  --headerFont: 'Lexend', sans-serif;
   --h1fontSizeDesktop: 2.028rem;
   --h2fontSizeDesktop: 1.842rem;
   --h3fontSizeDesktop: 1.63rem;
@@ -9,6 +9,7 @@
 body {
   font-family: var(--bodyFont);
   font-size: 16px;
+  font-weight: 300;
 }
 
 h1,
@@ -18,6 +19,7 @@ h4,
 h5,
 h6 {
   font-family: var(--headerFont);
+  font-weight: 600;
 }
 
 h1 {
