@@ -156,6 +156,9 @@ footer li {
   -ms-flex-align: end;
   align-items: flex-end;
   border: var(--border5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* ID overrides */
@@ -185,11 +188,11 @@ footer li {
   grid-area: portfolioShowCase;
 }
 
-#porftolioPieceTwo {
+#portfolioPieceTwo {
   grid-area: portfolioPieceTwo;
 }
 
-#porftolioPieceThree {
+#portfolioPieceThree {
   grid-area: portfolioPieceThree;
 }
 
