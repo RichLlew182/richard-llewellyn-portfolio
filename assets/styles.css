@@ -69,7 +69,7 @@ nav ul {
 
 nav li {
   display: inline;
-  padding: 0 15px;
+  padding-left: 40px;
 }
 
 nav a:after,
@@ -160,7 +160,7 @@ footer ul {
 
 footer li {
   display: inline;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 /* Class overrides */
@@ -201,6 +201,7 @@ footer li {
   position: relative;
   bottom: 25px;
   left: 0px;
+  max-width: 90%;
 }
 
 #portfolioGrid {
@@ -233,3 +234,13 @@ footer li {
 #portolioPieceFive {
   grid-area: portolioPieceFive;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}
