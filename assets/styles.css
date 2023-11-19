@@ -256,6 +256,10 @@ footer li {
     left: 7.5%;
   }
 
+  main {
+    padding: 7.5% 0 0;
+  }
+
   section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -326,8 +330,92 @@ footer li {
 
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
 
-@media only screen and (min-width: 992px) {}
+  nav {
+    width: 100%;
+    height: 150px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 25px 5%;
+    -ms-flex-line-pack: distribute;
+    align-content: space-between;
+  }
+
+  header {
+    height: 450px;
+  }
+
+  header h2 {
+    left: 5%;
+    text-align: center;
+  }
+
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+
+  section aside {
+    width: 100%;
+    border-right: none;
+    border-bottom: var(--border5);
+    text-align: center;
+    padding: 0 0 25px 0;
+  }
+
+  footer li {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .portfolio-images {
+    min-height: 300px;
+  }
+
+  #aboutMeText,
+  #portfolioGrid,
+  #footerLinks {
+    width: 100%;
+    padding: 25px 0 0 0;
+  }
+
+  #portfolioGrid {
+    grid-template-rows: 450px 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "portfolioShowCase portfolioShowCase"
+      "portfolioPieceTwo portfolioPieceThree"
+      "portfolioPieceFour portfolioPieceFive"
+  }
+
+  #portfolioGrid figcaption {
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #footerLinks {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  nav {
+    height: 100px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+}
 
 @media only screen and (min-width: 1200px) {}
