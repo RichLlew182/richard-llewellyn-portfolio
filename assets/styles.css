@@ -98,6 +98,10 @@ header {
 header picture {
   display: block;
   height: 100%;
+  background-image: url(./images/header-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header h2 {
@@ -186,22 +190,27 @@ footer li {
 
 #portfolioShowCase {
   grid-area: portfolioShowCase;
+  background-image: url(./images/project-1-horiseon.jpeg);
 }
 
 #portfolioPieceTwo {
   grid-area: portfolioPieceTwo;
+  background-image: url(./images/portfolio-2.jpeg);
 }
 
 #portfolioPieceThree {
   grid-area: portfolioPieceThree;
+  background-image: url(./images/portfolio-3.png);
 }
 
 #portfolioPieceFour {
   grid-area: portfolioPieceFour;
+  background-image: url(./images/portfolio-4.jpeg);
 }
 
 #portfolioPieceFive {
   grid-area: portfolioPieceFive;
+  background-image: url(./images/portfolio-5.jpeg);
 }
 
 /* Media Queries */
