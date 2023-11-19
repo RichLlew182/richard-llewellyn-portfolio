@@ -9,6 +9,10 @@
 
 /* Element overrides */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--bodyFont);
   font-size: 16px;
