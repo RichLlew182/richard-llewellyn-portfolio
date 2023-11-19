@@ -56,6 +56,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 5%;
+  height: 100px;
 }
 
 nav ul {
@@ -104,7 +105,6 @@ header h2 {
   bottom: 50px;
   right: 5%;
   background-color: white;
-  padding: 25px;
 }
 
 main {
@@ -219,6 +219,8 @@ footer li {
     bottom: 7.5%;
     right: 7.5%;
     left: 7.5%;
+    text-align: center;
+    padding: 15px;
   }
 
   main {
@@ -239,6 +241,9 @@ footer li {
     border-bottom: var(--border5);
     text-align: center;
     padding: 0 0 7.5% 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   footer {
@@ -299,12 +304,16 @@ footer li {
   nav {
     width: 100%;
     height: 150px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 25px 5%;
-    -ms-flex-line-pack: distribute;
-    align-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   nav li {
@@ -319,6 +328,7 @@ footer li {
   header h2 {
     left: 5%;
     text-align: center;
+    padding: 25px;
   }
 
   section {
@@ -335,6 +345,9 @@ footer li {
     border-bottom: var(--border5);
     text-align: center;
     padding: 0 0 25px 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   footer li {
@@ -350,7 +363,7 @@ footer li {
   }
 
   #portfolioGrid {
-    grid-template-rows: 450px 350px 350px;
+    grid-template-rows: 450px 320px 320px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "portfolioShowCase portfolioShowCase"
       "portfolioPieceTwo portfolioPieceThree"
@@ -375,11 +388,11 @@ footer li {
 
   nav {
     height: 100px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-line-pack: center;
-    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
   }
 
   nav li {
@@ -401,6 +414,9 @@ footer li {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: right;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   section {
