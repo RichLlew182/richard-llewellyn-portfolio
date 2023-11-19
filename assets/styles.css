@@ -58,16 +58,6 @@ nav {
   padding: 0 50px;
 }
 
-nav h1 {
-  display: inline;
-  float: left;
-}
-
-nav ul {
-  display: inline;
-  float: right;
-}
-
 nav li {
   display: inline;
   padding: 0 15px;
@@ -80,10 +70,17 @@ header {
   position: relative;
 }
 
+header picture {
+  display: block;
+  height: 100%;
+}
+
 header h2 {
   position: absolute;
   bottom: 25px;
-  right: 25px
+  right: 25px;
+  background-color: white;
+  padding: 15px;
 }
 
 section {
@@ -94,12 +91,16 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  margin: 50px 5%;
 }
 
 section aside {
   display: block;
   min-height: 300px;
-  width: 30%; border-right: 5px solid grey
+  width: 30%;
+  border-right: 5px solid grey;
+  text-align: right;
+  padding: 0 50px;
 }
 
 footer li {
@@ -111,4 +112,5 @@ footer li {
 #portfolioGrid,
 #footerLinks {
   width: 70%;
+  padding: 0 50px;
 }
