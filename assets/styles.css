@@ -111,7 +111,7 @@ section aside {
   width: 30%;
   border-right: 5px solid grey;
   text-align: right;
-  padding: 0 50px;
+  padding: 0 50px 0 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -128,10 +128,14 @@ footer {
 
 footer li {
   display: inline;
-  padding: 0 15px;
+  padding-right: 30px;
 }
 
 /* Class overrides */
+
+.portfolio-images {
+  background-color: red;
+}
 
 /* ID overrides */
 
@@ -139,7 +143,7 @@ footer li {
 #portfolioGrid,
 #footerLinks {
   width: 70%;
-  padding: 0 50px;
+  padding: 0 0 0 50px;
 }
 
 #aboutMeText,
@@ -150,4 +154,35 @@ footer li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+#portfolioGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 25px;
+  grid-template-areas:
+    "portolioShowCase portolioShowCase"
+    "portolioPieceTwo portolioPieceThree"
+    "portolioPieceFour portolioPieceFive";
+}
+
+#portolioShowCase {
+  grid-area: portolioShowCase;
+}
+
+#portolioPieceTwo {
+  grid-area: portolioPieceTwo;
+}
+
+#portolioPieceThree {
+  grid-area: portolioPieceThree;
+}
+
+#portolioPieceFour {
+  grid-area: portolioPieceFour;
+}
+
+#portolioPieceFive {
+  grid-area: portolioPieceFive;
 }
