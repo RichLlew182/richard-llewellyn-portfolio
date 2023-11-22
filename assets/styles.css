@@ -1,0 +1,484 @@
+:root {
+  --bodyFont: 'DM Sans', sans-serif;
+  --headerFont: 'Lexend', sans-serif;
+  --h1fontSizeDesktop: 2.028rem;
+  --h2fontSizeDesktop: 1.842rem;
+  --h3fontSizeDesktop: 1.63rem;
+  --border5: 4px solid #eaeaea;
+}
+
+/* Element overrides */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--bodyFont);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headerFont);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--h1fontSizeDesktop);
+}
+
+h2 {
+  font-size: var(--h2fontSizeDesktop);
+}
+
+h3 {
+  font-size: var(--h3fontSizeDesktop);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 5%;
+  height: 100px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a:after,
+footer a:after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 3px;
+  background: #eaeaea;
+  top: 5px;
+  width: 0;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s;
+}
+
+nav a:hover:after,
+footer a:hover:after {
+  width: 100%;
+}
+
+header {
+  display: block;
+  height: 25vmax;
+  background-color: #eaeaea;
+  position: relative;
+}
+
+header picture {
+  display: block;
+  height: 100%;
+  background-image: url(./images/header-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header h2 {
+  position: absolute;
+  bottom: 50px;
+  right: 5%;
+  background-color: white;
+}
+
+main {
+  padding: 25px 0 0;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch
+}
+
+section aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+figcaption h3 {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding-bottom: 50px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer li {
+  display: inline;
+}
+
+/* Class overrides */
+
+.portfolio-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border: var(--border5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+/* ID overrides */
+
+#footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#portfolioGrid figcaption {
+  background-color: #eaeaea;
+  padding: 15px 20px;
+  position: relative;
+  left: 0px;
+}
+
+#portfolioGrid {
+  display: grid;
+  gap: 25px;
+}
+
+#portfolioShowCase {
+  grid-area: portfolioShowCase;
+}
+
+#portfolioPieceTwo {
+  grid-area: portfolioPieceTwo;
+}
+
+#portfolioPieceThree {
+  grid-area: portfolioPieceThree;
+}
+
+#portfolioPieceFour {
+  grid-area: portfolioPieceFour;
+}
+
+#portfolioPieceFive {
+  grid-area: portfolioPieceFive;
+}
+
+#portfolioShowCaseImage {
+  background-image: url(./images/project-1-horiseon.jpeg);
+}
+
+#portfolioPieceTwoImage {
+  background-image: url(./images/portfolio-2.jpeg);
+}
+
+#portfolioPieceThreeImage {
+  background-image: url(./images/portfolio-3.png);
+}
+
+#portfolioPieceFourImage {
+  background-image: url(./images/portfolio-4.jpeg);
+}
+
+#portfolioPieceFiveImage {
+  background-image: url(./images/portfolio-5.jpeg);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+
+  nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  header {
+    height: 450px;
+  }
+
+  header h2 {
+    bottom: 7.5%;
+    right: 7.5%;
+    left: 7.5%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  main {
+    padding: 7.5% 0 0;
+  }
+
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    padding: 7.5%;
+  }
+
+  section aside {
+    width: 100%;
+    border-right: none;
+    border-bottom: var(--border5);
+    text-align: center;
+    padding: 0 0 7.5% 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  footer {
+    padding-bottom: 0px;
+  }
+
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer li {
+    padding: 10px 20px;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+
+  .portfolio-images {
+    height: 450px;
+  }
+
+  #aboutMeText,
+  #portfolioGrid,
+  #footerLinks {
+    width: 100%;
+    padding: 7.5% 0 0 0;
+  }
+
+  #portfolioGrid {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "portfolioShowCase"
+      "portfolioPieceTwo"
+      "portfolioPieceThree"
+      "portfolioPieceFour"
+      "portfolioPieceFive";
+  }
+
+  #portfolioGrid figcaption {
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  nav {
+    width: 100%;
+    height: 150px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 25px 5%;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  nav li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  header {
+    height: 450px;
+  }
+
+  header h2 {
+    left: 5%;
+    text-align: center;
+    padding: 25px;
+  }
+
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    padding: 25px 5%;
+  }
+
+  section aside {
+    width: 100%;
+    border-right: none;
+    border-bottom: var(--border5);
+    text-align: center;
+    padding: 0 0 25px 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  footer li {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  #aboutMeText,
+  #portfolioGrid,
+  #footerLinks {
+    width: 100%;
+    padding: 25px 0 0 0;
+  }
+
+  #portfolioGrid {
+    grid-template-rows: 450px 320px 320px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "portfolioShowCase portfolioShowCase"
+      "portfolioPieceTwo portfolioPieceThree"
+      "portfolioPieceFour portfolioPieceFive"
+  }
+
+  #portfolioGrid figcaption {
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #footerLinks {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  nav {
+    height: 100px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+  }
+
+  nav li {
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+
+  header h2 {
+    left: auto;
+  }
+
+  section aside {
+    width: 30%;
+    border-right: var(--border5);
+    border-bottom: none;
+    padding: 0 50px 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: right;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: 25px 5%;
+  }
+
+  #aboutMeText,
+  #portfolioGrid,
+  #footerLinks {
+    width: 70%;
+    padding: 0 0 0 50px;
+  }
+
+  #portfolioGrid figcaption {
+    bottom: 25px;
+    max-width: 90%;
+    width: auto;
+  }
+
+  #footerLinks {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  footer li {
+    padding-right: 40px;
+    padding-left: 0px;
+  }
+}
