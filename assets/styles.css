@@ -5,6 +5,7 @@
   --h2fontSizeDesktop: 1.842rem;
   --h3fontSizeDesktop: 1.63rem;
   --primaryBgDark: #435585;
+  --secondaryBgDark: #818FB4;
   --colorDark: #363062;
   --border4: 4px solid #818FB4;
 }
@@ -111,7 +112,7 @@ header {
 header picture {
   display: block;
   height: 100%;
-  background-image: url(./images/header-image.jpeg);
+  background-image: url(./images/header-image-2.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,11 +122,12 @@ header h2 {
   position: absolute;
   bottom: 50px;
   right: 0;
-  background-color: white;
+  background-color: var(--secondaryBgDark);
+  color: white;
 }
 
 main {
-  padding: 25px 0 0;
+  padding: 50px 0 0;
 }
 
 section {
@@ -150,6 +152,10 @@ section aside {
 figcaption h3 {
   color: white;
   margin-bottom: 10px;
+}
+
+figcaption p {
+  margin-bottom: 0;
 }
 
 footer {
@@ -219,7 +225,7 @@ footer li {
 }
 
 #portfolioGrid figcaption {
-  background-color: #818FB4;
+  background-color: var(--secondaryBgDark);
   padding: 15px 20px;
   position: relative;
   left: 0px;
