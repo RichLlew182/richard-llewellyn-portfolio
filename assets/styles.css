@@ -71,6 +71,7 @@ nav ul {
 
 nav li {
   display: inline;
+  font-size: 20px;
 }
 
 nav a:after,
@@ -151,6 +152,7 @@ footer ul {
 
 footer li {
   display: inline;
+  font-size: 20px;
 }
 
 /* Class overrides */
@@ -247,15 +249,17 @@ footer li {
   }
 
   header h2 {
-    bottom: 7.5%;
-    right: 7.5%;
-    left: 7.5%;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
     text-align: center;
     padding: 15px;
+    max-width: 320px;
   }
 
   main {
-    padding: 7.5% 0 0;
+    padding: 25px 0 0;
   }
 
   section {
@@ -263,7 +267,7 @@ footer li {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
-    padding: 7.5%;
+    padding: 25px 7.5%;
   }
 
   section aside {
@@ -271,7 +275,7 @@ footer li {
     border-right: none;
     border-bottom: var(--border5);
     text-align: center;
-    padding: 0 0 7.5% 0;
+    padding: 0 0 25px 0;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -300,19 +304,15 @@ footer li {
     display: none;
   }
 
-  .portfolio-images {
-    height: 450px;
-  }
-
   #aboutMeText,
   #portfolioGrid,
   #footerLinks {
     width: 100%;
-    padding: 7.5% 0 0 0;
+    padding: 25px 0 0 0;
   }
 
   #portfolioGrid {
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 450px repeat(4, 320px);
     grid-template-columns: 1fr;
     grid-template-areas:
       "portfolioShowCase"
@@ -357,9 +357,12 @@ footer li {
   }
 
   header h2 {
-    left: 5%;
+    left: 0;
+    right: 0;
+    max-width: 500px;
     text-align: center;
-    padding: 25px;
+    padding: 20px 25px;
+    margin: auto;
   }
 
   section {
@@ -394,9 +397,10 @@ footer li {
   }
 
   #portfolioGrid {
-    grid-template-rows: 450px 320px 320px;
+    grid-template-rows: 450px repeat(2, 320px);
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "portfolioShowCase portfolioShowCase"
+    grid-template-areas:
+      "portfolioShowCase portfolioShowCase"
       "portfolioPieceTwo portfolioPieceThree"
       "portfolioPieceFour portfolioPieceFive"
   }
@@ -433,6 +437,7 @@ footer li {
 
   header h2 {
     left: auto;
+    right: 5%;
   }
 
   section aside {
@@ -463,6 +468,14 @@ footer li {
   #footerLinks {
     width: 70%;
     padding: 0 0 0 50px;
+  }
+
+  #portfolioGrid {
+    grid-template-rows: 450px repeat(2, 250px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "portfolioShowCase portfolioShowCase"
+      "portfolioPieceTwo portfolioPieceThree"
+      "portfolioPieceFour portfolioPieceFive"
   }
 
   #portfolioGrid figcaption {
