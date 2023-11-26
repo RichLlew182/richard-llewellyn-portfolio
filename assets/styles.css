@@ -1,9 +1,9 @@
 :root {
   --bodyFont: 'DM Sans', sans-serif;
   --headingFont: 'Lexend', sans-serif;
-  --h1fontSizeDesktop: 2.028rem;
-  --h2fontSizeDesktop: 1.842rem;
-  --h3fontSizeDesktop: 1.63rem;
+  --h1fontSizeDesktop: 2.028em;
+  --h2fontSizeDesktop: 1.842em;
+  --h3fontSizeDesktop: 1.63em;
   --primaryBgDark: #435585;
   --secondaryBgDark: #818FB4;
   --colorDark: #363062;
@@ -40,6 +40,8 @@ h6 {
 h1 {
   font-size: var(--h1fontSizeDesktop);
   color: white;
+  background-color: var(--secondaryBgDark);
+  padding: 10px 15px;
 }
 
 h2 {
@@ -62,7 +64,6 @@ nav {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100px;
   margin: 0 auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -78,6 +79,7 @@ nav ul {
 nav li {
   display: inline;
   font-size: 20px;
+  text-align: center;
 }
 
 nav a {
@@ -90,12 +92,19 @@ footer a:after {
   display: block;
   position: relative;
   height: 3px;
-  background: #eaeaea;
   top: 5px;
   width: 0;
   -webkit-transition: width .3s;
   -o-transition: width .3s;
   transition: width .3s;
+}
+
+nav a:after {
+  background-color: #eaeaea;
+}
+
+footer a:after {
+  background-color: var(--secondaryBgDark);
 }
 
 nav a:hover:after,
@@ -276,6 +285,10 @@ footer li {
 
 @media only screen and (max-width: 767px) {
 
+  body {
+    font-size: 14px;
+  }
+
   nav {
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -284,8 +297,8 @@ footer li {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 10px 0;
+    height: 120px;
   }
-
 
   nav li {
     font-size: 16px;
@@ -377,7 +390,6 @@ footer li {
 @media only screen and (min-width: 768px) {
 
   nav {
-    width: 100%;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 15px 0;
@@ -388,6 +400,7 @@ footer li {
     -ms-flex-flow: column;
     flex-flow: column;
     width: 720px;
+    height: 150px;
   }
 
   nav li {
@@ -429,8 +442,8 @@ footer li {
   }
 
   footer li {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   #aboutMeText,
@@ -546,7 +559,7 @@ footer li {
   }
 
   footer li {
-    padding-right: 40px;
+    padding-right: 50px;
     padding-left: 0px;
   }
 }
