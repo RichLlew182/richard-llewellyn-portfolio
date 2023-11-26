@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,21 +17,22 @@
 
 <body>
 
-  <nav>
-    <h1>Richard Llewellyn</h1>
-    <ul class="hidden-mobile">
-      <li><a href="#aboutMe">About Me</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contactMe">Contact Me</a></li>
-      <li><a href="#">Resume</a></li>
-    </ul>
-  </nav>
-
-
-
   <header>
+    <nav>
+      <h1>Richard Llewellyn</h1>
+      <ul>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contactMe">Contact Me</a></li>
+        <li><a href="https://docs.google.com/document/d/12iFlt90hy_ZPoCiFkCl2keMMDUWpoqenzc0Q0lw29pM/edit?usp=sharing"
+            target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+
     <picture>
-      <h2>Web Development Portfolio</h2>
+      <section>
+        <h2>Web Development Portfolio</h2>
+      </section>
     </picture>
   </header>
 
@@ -41,12 +43,25 @@
         <h2>About Me</h2>
       </aside>
       <article id="aboutMeText">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam libero, veritatis, voluptate molestiae eum
-          odit ducimus, nulla fugit assumenda eveniet modi officiis? Suscipit nihil nobis accusamus quas, earum eum,
-          rerum
-          atque iure, accusantium similique laborum! Debitis deleniti in molestiae, est tempora, porro totam optio
-          minima
-          sint, voluptates doloremque sunt atque?</p>
+        <p>👋 Hi there! I'm Richard, a Graphic Designer and soon-to-be Front End Developer living and working in
+          London. </p>
+        <p>
+          After several years in the design industry I am now looking for new challenges and opportunities as a
+          Developer, so I have created this website to demonstrate some of my work.
+        </p>
+        <p>I catch on fast, and I'm the kind of person who pushes myself. I've got a creative side, and I take my
+          responsibilities seriously. Whether I'm working solo or with a team, my confidence helps me shine, and people
+          can count on me to get the job done right.</p>
+
+
+        <h3>Skills:</h3>
+        <br>
+        <ul>
+          <li>HTML, CSS, Javascript, Git</li>
+          <li>Figma</li>
+          <li>Adobe CC</li>
+        </ul>
+
       </article>
     </section>
 
@@ -56,6 +71,7 @@
       </aside>
       <article id="portfolioGrid">
         <a id="portfolioShowCase" href="https://richllew182.github.io/horiseon-code-refactor/" target="_blank">
+          <div class="overlay"></div>
           <figure id="portfolioShowCaseImage" class="portfolio-images" src="./assets/images/">
             <figcaption>
               <h3>Horiseon Code Refactor</h3>
@@ -63,35 +79,39 @@
             </figcaption>
           </figure>
         </a>
-        <a id="portfolioPieceTwo">
+        <a id="portfolioPieceTwo" href="#">
+          <div class="overlay"></div>
           <figure id="portfolioPieceTwoImage" class="portfolio-images">
             <figcaption>
-              <h3>Portfolio Piece 2</h3>
-              <p>Lorem Ipsum</p>
+              <h3>LED Wall</h3>
+              <p>Node/IoT</p>
             </figcaption>
           </figure>
         </a>
-        <a id="portfolioPieceThree">
+        <a id="portfolioPieceThree" href="#">
+          <div class="overlay"></div>
           <figure id="portfolioPieceThreeImage" class="portfolio-images">
             <figcaption>
-              <h3>Portfolio Piece 3</h3>
-              <p>Lorem Ipsum</p>
+              <h3>Calculator</h3>
+              <p>React/Javascript/CSS</p>
             </figcaption>
           </figure>
         </a>
-        <a id="portfolioPieceFour">
+        <a id="portfolioPieceFour" href="#">
+          <div class="overlay"></div>
           <figure id="portfolioPieceFourImage" class="portfolio-images">
             <figcaption>
-              <h3>Portfolio Piece 4</h3>
-              <p>Lorem Ipsum</p>
+              <h3>Pastel Puzzles</h3>
+              <p>MERN Stack</p>
             </figcaption>
           </figure>
         </a>
-        <a id="portfolioPieceFive">
+        <a id="portfolioPieceFive" href="#">
+          <div class="overlay"></div>
           <figure id="portfolioPieceFiveImage" class="portfolio-images">
             <figcaption>
-              <h3>Portfolio Piece 5</h3>
-              <p>Lorem Ipsum</p>
+              <h3>Run Buddy</h3>
+              <p>HTML/CSS</p>
             </figcaption>
           </figure>
         </a>
@@ -107,11 +127,14 @@
       </aside>
       <article id="footerLinks">
         <ul>
-          <li><a href="tel:07538820382">Call Me</a></li>
+          <li><a href="#">Call Me</a></li>
           <li><a href="mailto:richard.llewellyn@gmail.com">Email Me</a></li>
           <li><a href="https://github.com/RichLlew182" target="_blank" rel="noopener noreferrer">GitHub</a>
           <li><a href="https://www.linkedin.com/in/richard-llewellyn-9073862b/" target="_blank"
               rel="noopener noreferrer">Linkedin</a>
+          </li>
+          <li><a href="https://docs.google.com/document/d/12iFlt90hy_ZPoCiFkCl2keMMDUWpoqenzc0Q0lw29pM/edit?usp=sharing"
+              target="_blank" rel="noopener noreferrer">Resume</a>
           </li>
         </ul>
       </article>
