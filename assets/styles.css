@@ -283,6 +283,8 @@ footer li {
 
 /* Media Queries */
 
+/* Mobile Devices */
+
 @media only screen and (max-width: 767px) {
 
   body {
@@ -387,6 +389,8 @@ footer li {
 
 }
 
+/* Tablet Devices potrait and above */
+
 @media only screen and (min-width: 768px) {
 
   nav {
@@ -476,6 +480,8 @@ footer li {
 
 }
 
+/* Tablet devices landscape and above */
+
 @media only screen and (min-width: 992px) {
 
   nav {
@@ -563,6 +569,8 @@ footer li {
     padding-left: 0px;
   }
 }
+
+/* Desktop devices and above */
 
 @media only screen and (min-width : 1200px) {
 
